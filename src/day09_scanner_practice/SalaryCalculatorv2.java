@@ -1,0 +1,14 @@
+package day09_scanner_practice;
+import java.util.Scanner;
+
+public class SalaryCalculatorv2 {
+    public static void main(String[] args) {
+     Scanner scan= new Scanner(System.in);
+        System.out.println("Enter hourly rate");
+        double hourlyrate = scan.nextDouble();
+        double weeklypay = hourlyrate*40;
+        double montlypay= weeklypay * 52/12;
+        double annualpay = montlypay * 12;
+        System.out.println("weeklypay: "+ weeklypay+"\n"+"monthlypay: "+montlypay +"\n"+"annualpay: " + annualpay);
+    }
+}
